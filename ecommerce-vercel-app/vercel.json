@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/app.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/products",
+      "methods": ["GET"],
+      "dest": "src/routes/products.ts"
+    },
+    {
+      "src": "/api/orders",
+      "methods": ["POST"],
+      "dest": "src/routes/orders.ts"
+    },
+    {
+      "src": "/api/orders/history",
+      "methods": ["GET"],
+      "dest": "src/routes/orders.ts"
+    }
+  ],
+  "env": {
+    "MONGO_URI": "@mongo_uri"
+  }
+}
