@@ -1,0 +1,19 @@
+{
+  "name": "vercel-mongodb-project",
+  "version": "1.0.0",
+  "description": "A project to connect to MongoDB using Vercel and environment variables.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vite build",
+    "start": "vercel start"
+  },
+  "dependencies": {
+    "mongodb": "^4.1.0"
+  },
+  "devDependencies": {
+    "vercel": "^23.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
